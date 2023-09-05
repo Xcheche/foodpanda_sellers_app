@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:foodpanda_sellers_app/splashscreen/splash_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,6 +15,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(primarySwatch: Colors.blue),
         title: 'Sellers App',
-        home: const Scaffold());
+        home: const MySplashScreen());
   }
 }
