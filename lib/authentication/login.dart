@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/custom_Text_Field.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -8,8 +10,58 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  TextEditingController emailcontroller = TextEditingController();
+  TextEditingController passwordcontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Container(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.all(15),
+              child: Image.asset(
+                "images/seller.png",
+                height: 270,
+              ),
+            ),
+          ),
+          Form(
+            key: _formKey,
+            child: Column(
+              children: [
+                CustomTextField(
+                  data: Icons.email,
+                  controller: emailcontroller,
+                  hintText: "Email",
+                  isObsecre: false,
+                ),
+                CustomTextField(
+                  data: Icons.lock,
+                  controller: passwordcontroller,
+                  hintText: "Password",
+                  isObsecre: true,
+                )
+              ],
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () => print("clicked"),
+            style: ElevatedButton.styleFrom(
+              primary: Colors.purple,
+              padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+            ),
+            child: const Text(
+              "LogIn",
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

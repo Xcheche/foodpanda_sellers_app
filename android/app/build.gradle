@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.example.foodpanda_sellers_app"
-    compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion flutter.compileSdkVersion 31
     ndkVersion flutter.ndkVersion
 
     compileOptions {
