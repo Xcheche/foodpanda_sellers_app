@@ -7,7 +7,7 @@ class CustomTextField extends StatelessWidget {
   bool? isObsecre = true;
   bool? enabled = true;
 
-  CustomTextField({
+  CustomTextField({super.key, 
     this.controller,
     this.data,
     this.hintText,

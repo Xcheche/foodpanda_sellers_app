@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ElevatedButton(
             onPressed: () => print("clicked"),
             style: ElevatedButton.styleFrom(
-              primary: Colors.purple,
+              backgroundColor: Colors.purple,
               padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
             ),
             child: const Text(
