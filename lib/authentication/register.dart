@@ -43,8 +43,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
       position!.longitude,
     );
 
-    Placemark pMarks = placeMarks![0];
-    String completeAddress = ${pMark.subThoroughfare}, ${pMark.thoroughfare}, ${pMark.subLocality}, ${pMark.locality},${pMark.subAdminstrativeArea}, ${pMark.AdminstrativeArea},${pMark.postalCode},${pMark.country};
+    Placemark pMark = placeMarks![0];
+    String completeAddress =
+        '${pMark.subThoroughfare}, ${pMark.thoroughfare}, ${pMark.subLocality}, ${pMark.locality}, ${pMark.subAdministrativeArea}, ${pMark.administrativeArea}, ${pMark.postalCode}, ${pMark.country}';
+    locationcontroller.text = completeAddress;
   }
 
   @override
@@ -135,7 +137,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Icons.location_on,
                         color: Colors.white,
                       ),
-                      onPressed: () => print("clicked"),
+                      onPressed: () {
+                        getCurrentLocation();
+                      },
                       style: ElevatedButton.styleFrom(
                         primary: Colors.amber,
                         shape: RoundedRectangleBorder(
