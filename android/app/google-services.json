@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "440786705242",
-    "project_id": "food-panda-sellers-app-814c8",
-    "storage_bucket": "food-panda-sellers-app-814c8.appspot.com"
+    "project_number": "986946743750",
+    "project_id": "food-panda-selling-app",
+    "storage_bucket": "food-panda-selling-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:440786705242:android:a1330e4aae8ad79e51b163",
+        "mobilesdk_app_id": "1:986946743750:android:cf1b58b1e0f9d365a056c7",
         "android_client_info": {
           "package_name": "com.example.foodpanda_sellers_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDLMtv2P4Ih_unfZDZcsY1veFGIuWuuPy0"
+          "current_key": "AIzaSyAa6vwupFbJ3LsYnD9NK70DGqqcnM3kkaE"
         }
       ],
       "services": {
